@@ -1,15 +1,22 @@
 ---
 title: "DS311 - Basic R Lab Exercise"
-author: "Replace with Your Name"
-date: "1/10/2023"
+author: "Christina Castillo"
+date: "2/27/2024"
 output:
   pdf_document: default
   html_document: default
 subtitle: R Lab Exercise
 ---
 
+
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+options(repos = c(CRAN = "https://cloud.r-project.org"))
+if (!require(package_name)) install.packages("package_name")
+
+
 ```
 
 # Basic R Exercise
@@ -205,37 +212,37 @@ paste("Current Working Directory: ", wd1)
 ```
 
 ### Installing and Loading Packages
-
 ```{r, include=FALSE}
+
 # Install a new package, note the quotation marks
-# install.packages("mass")
+ #install.packages("MASS")
 
 # Install multiple packages at once
-# install.packages(c("dplyr", "ggplot2"))
+ #install.packages(c("dplyr", "ggplot2"))
 
 # Loading the package, note no quotation marks
-# library(dplyr)
+#library(dplyr)
 
 # Checking the package version
-# packageVersion("dplyr")
+packageVersion("dplyr")
 
 # List all functions in a package
-# ls("package:ggplot2")
+#ls("package:ggplot2")
 
 # Loading a function from package
-# ggplot2::geom_line
+#ggplot2::geom_line
 
 # Update all packages
-# update.packages()
+ #update.packages()
 
 # Unload a package
-# detach(package:ggplot2, unload=TRUE)
+ #detach(package:ggplot2, unload=TRUE)
 
 # Help function
-# help(dplyr)
+ help(dplyr)
 
 # Checking the session info
-# sessionInfo()
+ sessionInfo()
 ```
 
 ***
